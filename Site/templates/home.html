@@ -1,12 +1,108 @@
-<!doctype html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Khushal Neekhra</title>
-    </head>
-    <body>
-        <p>hello world</p>
-    </body>
-</html>
+{% extends "layout.html" %} {% block content %}
+
+<section class="hero">
+    <img
+        src="https://avatars.githubusercontent.com/u/71013301?v=4"
+        alt="Profile picture"
+        class="profile-img"
+    />
+    <h1>Khushal Neekhra</h1>
+    <p>Full Stack Developer | Python Enthusiast | Creative Technologist</p>
+</section>
+
+<!-- About Section -->
+<section id="about">
+    <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="card">
+            <p>
+                I'm a passionate developer with expertise in full-stack
+                development, creative coding, and problem-solving. With a strong
+                foundation in Python and modern web technologies, I create
+                efficient and scalable solutions.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Tech Stack Section -->
+<section id="skills">
+    <div class="container">
+        <h2 class="section-title">Tech Stack</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Languages</h3>
+                <ul>
+                    <li>Python</li>
+                    <li>HTML/CSS</li>
+                    <li>Rust</li>
+                    <li>SQL</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Frameworks</h3>
+                <ul>
+                    <li>Flask</li>
+                    <li>Bootstrap</li>
+                    <li>NumPy</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Tools</h3>
+                <ul>
+                    <li>Git & GitHub</li>
+                    <li>Google Cloud</li>
+                    <li>Blender</li>
+                    <li>Canva</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+    <div class="container">
+        <h2 class="section-title">Get in Touch</h2>
+        <div class="card">
+            <div class="contact-links">
+                <div class="social-links">
+                    <a
+                        href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&to=khushalneekhra@gmail.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="social-link"
+                    >
+                        Gmail
+                    </a>
+                    <a
+                        href="https://github.com/volt-l18"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="social-link"
+                    >
+                        GitHub
+                    </a>
+                    <a
+                        href="https://www.linkedin.com/in/khushal-neekhra-8ba53924b/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="social-link"
+                    >
+                        LinkedIn
+                    </a>
+                    <a
+                        href="https://x.com/volt_l18"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="social-link"
+                    >
+                        Twitter
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock content %}
