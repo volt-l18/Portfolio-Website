@@ -1,10 +1,11 @@
 import ListGroup from "./components/ListGroup";
 import Button from "./components/Button";
-import Alert from "./components/alert";
+import Alert from "./components/Alert";
+import Navbar from "./components/Navbar";
 import { useState } from "react";
 
 function App() {
-  let items = ["alee", "nya nya", "nickorange", "uvomber"];
+  let items = ["Name : khushal Neekhra"];
 
   const heandleSelectItem = (item: string) => {
     console.log(item);
@@ -14,16 +15,19 @@ function App() {
 
   return (
     <div>
+      <Navbar />
       <ListGroup
         items={items}
-        heading="frens inside puter"
+        heading="hello"
         onSelectItem={heandleSelectItem}
       />
       {alertVisible && (
-        <Alert onclose={() => setAlertVisibility(false)}>WEEEBBBB!!!!!</Alert>
+        <Alert onclose={() => setAlertVisibility(false)}>
+          good now hire me
+        </Alert>
       )}
       <Button onClick={() => setAlertVisibility(true)} color="info">
-        erm.?
+        click me
       </Button>
     </div>
   );
