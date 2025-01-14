@@ -23,7 +23,15 @@ function App() {
       />
       {alertVisible && (
         <Alert onclose={() => setAlertVisibility(false)}>
-          good now hire me
+          good now hire me <br /> Email :
+          {
+            <a
+              target="_blank"
+              href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSDZcmFDJbgkRSxKdzfbBPMxJlSpcgmkrsqGTmRlshxNjpnLgdJVgcxbCQSKJnqMkQVjGkdC"
+            >
+              khushalneekhr@gmail.com
+            </a>
+          }
         </Alert>
       )}
       <Button onClick={() => setAlertVisibility(true)} color="info">
