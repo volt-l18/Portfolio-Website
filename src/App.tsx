@@ -1,13 +1,14 @@
-import "./App.css";
+/*
+ * Components
+ */
+import Header from "./components/Header";
 
-function App() {
+const App = () => {
   return (
     <>
-      <div className="">
-        <h1 className="text-3xl font-bold ">Hello i'm Khushal 👋</h1>
-      </div>
+      <Header />
     </>
   );
-}
+};
 
 export default App;
