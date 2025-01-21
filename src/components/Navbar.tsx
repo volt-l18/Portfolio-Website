@@ -1,35 +1,48 @@
-/*
- * Node Modules
- */
 import { useRef, useEffect } from "react";
 import PropTypes from "prop-types";
 
-const Navbar = ({ navOpen }) => {
-  const lastActiveLink = useRef();
-  const activeBox = useRef();
+const Navbar = ({ navOpen }: { navOpen: boolean }) => {
+  const lastActiveLink = useRef<HTMLAnchorElement | null>(null);
+  const activeBox = useRef<HTMLDivElement | null>(null);
+
   const initActiveBox = () => {
-    activeBox.current.style.top = lastActiveLink.current.offsetTop + "px";
-    activeBox.current.style.left = lastActiveLink.current.offsetLeft + "px";
-    activeBox.current.style.width = lastActiveLink.current.offsetWidth + "px";
-    activeBox.current.style.height = lastActiveLink.current.offsetHeight + "px";
+    if (lastActiveLink.current && activeBox.current) {
+      activeBox.current.style.top = `${lastActiveLink.current.offsetTop}px`;
+      activeBox.current.style.left = `${lastActiveLink.current.offsetLeft}px`;
+      activeBox.current.style.width = `${lastActiveLink.current.offsetWidth}px`;
+      activeBox.current.style.height = `${lastActiveLink.current.offsetHeight}px`;
+    }
   };
-  useEffect(initActiveBox, []);
-  window.addEventListener("resize", initActiveBox);
-  const activeCurrentLink = (event) => {
-    lastActiveLink.current?.classList.remove("active");
-    event.target.classList.add("active");
-    lastActiveLink.current = event.target;
-    activeBox.current.style.top = event.target.offsetTop + "px";
-    activeBox.current.style.left = event.target.offsetLeft + "px";
-    activeBox.current.style.width = event.target.offsetWidth + "px";
-    activeBox.current.style.height = event.target.offsetHeight + "px";
+
+  useEffect(() => {
+    initActiveBox();
+    window.addEventListener("resize", initActiveBox);
+
+    return () => {
+      window.removeEventListener("resize", initActiveBox);
+    };
+  }, []);
+
+  const activeCurrentLink = (event: React.MouseEvent<HTMLAnchorElement>) => {
+    if (lastActiveLink.current) {
+      lastActiveLink.current.classList.remove("active");
+    }
+    event.currentTarget.classList.add("active");
+    lastActiveLink.current = event.currentTarget;
+
+    if (activeBox.current) {
+      activeBox.current.style.top = `${event.currentTarget.offsetTop}px`;
+      activeBox.current.style.left = `${event.currentTarget.offsetLeft}px`;
+      activeBox.current.style.width = `${event.currentTarget.offsetWidth}px`;
+      activeBox.current.style.height = `${event.currentTarget.offsetHeight}px`;
+    }
   };
+
   const navItems = [
     {
       label: "Home",
       link: "#home",
       className: "nav-link active",
-      ref: lastActiveLink,
     },
     {
       label: "About",
@@ -54,13 +67,13 @@ const Navbar = ({ navOpen }) => {
   ];
 
   return (
-    <nav className={"navbar " + (navOpen ? "active" : "")}>
-      {navItems.map(({ label, link, className, ref }, key) => (
+    <nav className={`navbar ${navOpen ? "active" : ""}`}>
+      {navItems.map(({ label, link, className }, key) => (
         <a
           href={link}
           className={className}
           key={key}
-          ref={ref}
+          ref={key === 0 ? lastActiveLink : null}
           onClick={activeCurrentLink}
         >
           {label}
@@ -70,5 +83,9 @@ const Navbar = ({ navOpen }) => {
     </nav>
   );
 };
-Navbar.propTypes = { navOpen: PropTypes.bool.isRequired };
+
+Navbar.propTypes = {
+  navOpen: PropTypes.bool.isRequired,
+};
+
 export default Navbar;
