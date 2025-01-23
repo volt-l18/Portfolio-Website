@@ -41,11 +41,14 @@ body {
 .container {
     @apply px-4 mx-auto lg:px-8 xl:max-w-6xl;
 }
-img-box {
+.img-box {
     @apply bg-zinc-700 overflow-hidden;
 }
 .img-cover {
     @apply w-full h-full object-cover;
+}
+.section {
+    @apply pt-20 lg:pt-32;
 }
 /*-------------------------------------*\
  * COMPONENTS
@@ -88,4 +91,8 @@ img-box {
 }
 .btn-primary {
     @apply h-11 bg-sky-400 text-zinc-950 hover:bg-sky-300 active:bg-sky-400;
+}
+
+.btn-outline {
+    @apply h-11 bg-zinc-800 hover:bg-zinc-700 active:bg-zinc-800;
 }
