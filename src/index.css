@@ -16,7 +16,8 @@ body {
 /*-------------------------------------*\
  * TYPOGRAPHY
 \*-------------------------------------*/
-.headline-1 {
+.headline-1,
+.headline-2 {
     @apply max-w-max;
     background: -webkit-linear-gradient(0deg, #fafafa, #a1a1a1);
     -webkit-background-clip: text;
@@ -24,6 +25,9 @@ body {
 }
 .headline-1 {
     @apply text-5xl leading-tight font-semibold lg:text-[55px] lg:leading-[1.15];
+}
+.headline-2 {
+    @apply text-3xl font-semibold lg:text-4xl lg:leading-tight;
 }
 
 /*-------------------------------------*\
