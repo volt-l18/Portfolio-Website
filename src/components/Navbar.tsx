@@ -1,5 +1,4 @@
 import { useRef, useEffect } from "react";
-import PropTypes from "prop-types";
 
 const Navbar = ({ navOpen }: { navOpen: boolean }) => {
   const lastActiveLink = useRef<HTMLAnchorElement | null>(null);
@@ -82,10 +81,6 @@ const Navbar = ({ navOpen }: { navOpen: boolean }) => {
       <div className="active-box" ref={activeBox}></div>
     </nav>
   );
-};
-
-Navbar.propTypes = {
-  navOpen: PropTypes.bool.isRequired,
 };
 
 export default Navbar;

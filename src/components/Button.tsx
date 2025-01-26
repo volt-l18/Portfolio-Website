@@ -1,8 +1,3 @@
-/*
- * Node Modules
- */
-import PropTypes from "prop-types";
-
 interface ButtonPrimaryProps {
   href?: string;
   target?: string;
@@ -48,14 +43,6 @@ const ButtonPrimary = ({
   }
 };
 
-ButtonPrimary.propTypes = {
-  label: PropTypes.string.isRequired,
-  href: PropTypes.string,
-  target: PropTypes.string,
-  icon: PropTypes.string,
-  classes: PropTypes.string,
-};
-
 interface ButtonOutlineProps {
   href?: string;
   target?: string;
@@ -99,14 +86,6 @@ const ButtonOutline = ({
       </button>
     );
   }
-};
-
-ButtonOutline.propTypes = {
-  label: PropTypes.string.isRequired,
-  href: PropTypes.string,
-  target: PropTypes.string,
-  icon: PropTypes.string,
-  classes: PropTypes.string,
 };
 
 export { ButtonPrimary, ButtonOutline };

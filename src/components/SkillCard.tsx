@@ -1,8 +1,3 @@
-/*
- * Node module
- */
-import PropTypes from "prop-types";
-
 interface SkillCardProps {
   imgSrc?: string;
   label?: string;
@@ -27,13 +22,6 @@ const SkillCard = ({ imgSrc, label, desc, classes }: SkillCardProps) => {
       </div>
     </div>
   );
-};
-
-SkillCard.propTypes = {
-  imgSrc: PropTypes.string.isRequired,
-  label: PropTypes.string.isRequired,
-  desc: PropTypes.string.isRequired,
-  classes: PropTypes.string,
 };
 
 export default SkillCard;
