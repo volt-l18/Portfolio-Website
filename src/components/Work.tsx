@@ -6,9 +6,27 @@ import ProjectCard from "./ProjectCard";
 const works = [
   {
     imgSrc: "/images/project-1.png",
-    title: "Blog WebApp build with Falsk",
+    title: "Blog Web Application",
     tags: ["DBMS", "Hashing", "Development"],
     projectLink: "https://github.com/volt-l18/Blog_WebApp_Falsk",
+  },
+  {
+    imgSrc: "/images/project-2.png",
+    title: "Live chat application",
+    tags: ["WebSockets", "Web Development"],
+    projectLink: "https://github.com/volt-l18/Live-Chat-room-with-Flask",
+  },
+  {
+    imgSrc: "/images/project-3.gif",
+    title: "SproutLand",
+    tags: ["Godot", "2D Simulation", "Game Development"],
+    projectLink: "https://github.com/volt-l18/Sprout-Land-game-devlopment-repo",
+  },
+  {
+    imgSrc: "/images/project-4.gif",
+    title: "Space inveders",
+    tags: ["Pygame", "2D Simulation", "Game Development"],
+    projectLink: "https://github.com/volt-l18/non_pixelized_space_inveders_OwO",
   },
 ];
 
