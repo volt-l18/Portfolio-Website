@@ -29,7 +29,11 @@ const Hero = () => {
             Writing magical spells which run silicon.
           </h2>
           <div className="flex items-center gap-3">
-            <ButtonPrimary label="Download CV" icon="download" />
+            <ButtonPrimary
+              label="Download CV"
+              icon="download"
+              href="https://drive.usercontent.google.com/download?id=1C1NIq0LSwi2hj-Ld6C8bHCOVOXEykBhR"
+            />
             <ButtonOutline
               href="#about"
               label="Scroll down"
