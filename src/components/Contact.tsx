@@ -141,7 +141,7 @@ const Contact = () => {
               name="message"
               id="message"
               placeholder="Hi!"
-              className="text-field resize-y min-h-32 max-h-80 reveal-up scrollbar-thin scrollbar-track-zinc-800 scrollbar-thumb-sky-400"
+              className="text-field resize-y min-h-32 max-h-80 reveal-up scrollbar-none"
             ></textarea>
           </div>
           <button
