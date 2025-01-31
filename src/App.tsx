@@ -5,6 +5,7 @@ import { ReactLenis } from "lenis/react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
+import { Analytics } from "@vercel/analytics/react";
 /*
  * Register gsap plugins
  */
@@ -43,6 +44,7 @@ const App = () => {
 
   return (
     <ReactLenis root>
+      <Analytics />
       <Header />
       <main>
         <Hero />
