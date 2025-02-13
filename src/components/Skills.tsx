@@ -10,31 +10,6 @@ const skillItem = [
     desc: "Genral purpose / Logic building",
   },
   {
-    imgSrc: "/images/flask.svg",
-    label: "Flask",
-    desc: "Framework",
-  },
-  {
-    imgSrc: "/images/mysql.svg",
-    label: "SQL",
-    desc: "Database",
-  },
-  {
-    imgSrc: "/images/godot.svg",
-    label: "Godot",
-    desc: "Game engine",
-  },
-  {
-    imgSrc: "/images/blender.svg",
-    label: "Blender",
-    desc: "3D assets creation",
-  },
-  {
-    imgSrc: "/images/css3.svg",
-    label: "CSS",
-    desc: "User Interface",
-  },
-  {
     imgSrc: "/images/javascript.svg",
     label: "JavaScript",
     desc: "Interaction",
@@ -45,9 +20,14 @@ const skillItem = [
     desc: "Interaction",
   },
   {
-    imgSrc: "/images/nodejs.svg",
-    label: "NodeJS",
-    desc: "Web Server",
+    imgSrc: "/images/mysql.svg",
+    label: "SQL",
+    desc: "Database",
+  },
+  {
+    imgSrc: "/images/flask.svg",
+    label: "Flask",
+    desc: "Framework",
   },
   {
     imgSrc: "/images/react.svg",
@@ -55,9 +35,29 @@ const skillItem = [
     desc: "Framework",
   },
   {
+    imgSrc: "/images/nodejs.svg",
+    label: "NodeJS",
+    desc: "Web Server",
+  },
+  {
     imgSrc: "/images/tailwindcss.svg",
     label: "TailwindCSS",
     desc: "User Interface",
+  },
+  {
+    imgSrc: "/images/css3.svg",
+    label: "CSS",
+    desc: "User Interface",
+  },
+  {
+    imgSrc: "/images/blender.svg",
+    label: "Blender",
+    desc: "3D assets creation",
+  },
+  {
+    imgSrc: "/images/godot.svg",
+    label: "Godot",
+    desc: "Game engine",
   },
 ];
 

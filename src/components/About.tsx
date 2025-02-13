@@ -1,48 +1,16 @@
-const aboutItems = [
-  {
-    label: "Project done",
-    number: 5,
-  },
-  {
-    label: "Years of experience",
-    number: 1,
-  },
-];
-
 const About = () => {
   return (
     <section id="about" className="section">
       <div className="container">
         <div className="bg-zinc-800/50 p-7 rounded-2xl md:p-12 reveal-up">
-          <p className="text-zinc-300 mb-4 md:mb-8 md:text-xl md:max-w-[60ch]">
-            Welcome! I&apos;m Khuhsal, a professional Wizard with a knack for
-            crafting visually stunning and highly functional magical spells and
-            charms. Combining creativity and technical expertise. I transform
-            your vision into magical masterpiece that excels in both appearance
-            and performance.
+          <p className="text-zinc-300 mb-2 md:mb-2 md:text-xl ">
+            I'm a React and Tailwind developer with a passion for building
+            sleek, responsive UIs. I have a strong grasp of TypeScript for
+            scalable and maintainable code, along with Python expertise for
+            backend development and automation. Whether it's crafting intuitive
+            front-end experiences or streamlining workflows with automation, I
+            love solving problems with clean and efficient code.
           </p>
-          <div className="flex flex-wrap items-center gap-4 md:gap-7">
-            {aboutItems.map(({ label, number }, key) => (
-              <div key={key}>
-                <div className="flex items-center md:mb-2">
-                  <span className="text-2xl font-bold md:text-4xl">
-                    {number}
-                  </span>
-                  <span className="text-sky-400 font-semibold md:text-3xl">
-                    &nbsp;+
-                  </span>
-                </div>
-                <p className="text-sm text-zinc-400">{label}</p>
-              </div>
-            ))}
-            <img
-              src="/images/logo.svg"
-              alt="Logo"
-              width={30}
-              height={30}
-              className="ml-auto md:w-[40px] md:h-[40px]"
-            />
-          </div>
         </div>
       </div>
     </section>
