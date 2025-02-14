@@ -6,6 +6,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 /*
  * Register gsap plugins
  */
@@ -44,6 +45,7 @@ const App = () => {
   return (
     <ReactLenis root>
       <Analytics />
+      <SpeedInsights />
       <Header />
       <main>
         <Hero />
