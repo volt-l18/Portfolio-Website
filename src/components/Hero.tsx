@@ -34,6 +34,7 @@ const Hero = () => {
               label="Download CV"
               icon="download"
               href="https://drive.google.com/file/d/1C1NIq0LSwi2hj-Ld6C8bHCOVOXEykBhR/view?usp=sharing"
+              target="_blank"
             />
           </div>
         </div>
