@@ -62,7 +62,7 @@ const Footer = () => {
             <img src="/images/logo.svg" width={40} height={40} alt="Logo" />
           </a>
           <p className="text-zinc-500 text-sm reveal-up">
-            &copy;2025 <span className="text-zinc-200">Khusahl_Neekhra</span>
+            &copy;2025 <span className="text-zinc-200">Khushal_Neekhra</span>
           </p>
         </div>
       </div>
