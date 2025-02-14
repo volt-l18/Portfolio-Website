@@ -79,13 +79,12 @@ const Contact = () => {
       <div className="container lg:grid lg:grid-cols-2 lg:items-stretch">
         <div className="mb-12 lg:mb-0 lg:flex lg:flex-col">
           <h2 className="headline-2 lg:max-w-[12ch] reveal-up">
-            Contact me for collaboration
+            Connect with me
           </h2>
           <p className="text-zinc-400 mt-3 mb-8 max-w-[50ch] lg:max-w-[30ch] reveal-up ">
-            Reach out today to discuss your project needs and start
-            collaborating on something amazing!
+            Let's connect and discuss how I can add value to your team.
           </p>
-          <div className="flex items-center gap-2 mt-auto">
+          <div className="flex items-center gap-2 mt-0">
             {socialLinks.map(({ href, icon }, key) => (
               <a
                 className="w-12 h-12 grid place-items-center ring-inset ring-2 ring-zinc-50/5 rounded-lg transition-[background-color,color] hover:bg-sky-400 text-zinc-950 active:bg-zinc-50/80 reveal-up"
