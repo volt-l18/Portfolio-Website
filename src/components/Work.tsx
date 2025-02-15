@@ -28,6 +28,12 @@ const works = [
     tags: ["WebSockets", "Web Development"],
     projectLink: "https://github.com/volt-l18/Live-Chat-room-with-Flask",
   },
+  {
+    imgSrc: "/images/project-5.png",
+    title: "Zephyra-AI",
+    tags: ["React", "AI", "Framer Motion", "Appwrite"],
+    projectLink: "https://github.com/volt-l18/Zephyra",
+  },
 ];
 
 const Work = () => {
