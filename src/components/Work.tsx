@@ -5,6 +5,12 @@ import ProjectCard from "./ProjectCard";
 
 const works = [
   {
+    imgSrc: "/images/project-5.gif",
+    title: "Magic Match",
+    tags: ["React", "CSS5", "Game Development"],
+    projectLink: "https://memory-game-react-taupe.vercel.app/",
+  },
+  {
     imgSrc: "/images/project-4.gif",
     title: "Space inveders",
     tags: ["Pygame", "2D Simulation", "Game Development"],
