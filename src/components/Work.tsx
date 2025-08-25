@@ -5,6 +5,12 @@ import ProjectCard from "./ProjectCard";
 
 const works = [
   {
+    imgSrc: "/images/project-6.gif",
+    title: "Slimy Tails",
+    tags: ["Godot", "PixelArt", "Game Development", "Platformer"],
+    projectLink: "https://itch.io/jam/shovel-jam-2025/rate/3740558",
+  },
+  {
     imgSrc: "/images/project-5.gif",
     title: "Magic Match",
     tags: ["React", "CSS5", "Game Development"],
