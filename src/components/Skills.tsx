@@ -25,6 +25,11 @@ const skillItem = [
     desc: "Database",
   },
   {
+    imgSrc: "/images/docker.svg",
+    label: "Docker",
+    desc: "Containerization",
+  },
+  {
     imgSrc: "/images/flask.svg",
     label: "Flask",
     desc: "Framework",
