@@ -5,6 +5,12 @@ import ProjectCard from "./ProjectCard";
 
 const works = [
   {
+    imgSrc: "/images/project-2.png",
+    title: "Aevum",
+    tags: ["Rust", "Ratatui", "CLI", "Linux"],
+    projectLink: "https://github.com/volt-l18/aevum",
+  },
+  {
     imgSrc: "/images/project-6.gif",
     title: "Slimy Tails",
     tags: ["Godot", "PixelArt", "Game Development", "Platformer"],
@@ -33,13 +39,7 @@ const works = [
     title: "Blog Web Application",
     tags: ["DBMS", "Hashing", "Development"],
     projectLink: "https://github.com/volt-l18/Blog_WebApp_Falsk",
-  },
-  {
-    imgSrc: "/images/project-2.png",
-    title: "Live chat application",
-    tags: ["WebSockets", "Web Development"],
-    projectLink: "https://github.com/volt-l18/Live-Chat-room-with-Flask",
-  },
+  }
 ];
 
 const Work = () => {
