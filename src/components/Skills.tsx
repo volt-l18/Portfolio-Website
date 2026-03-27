@@ -10,6 +10,11 @@ const skillItem = [
     desc: "General purpose / Logic building",
   },
   {
+    imgSrc: "/images/rust.svg",
+    label: "Rust",
+    desc: "Programming"
+  },
+  {
     imgSrc: "/images/javascript.svg",
     label: "JavaScript",
     desc: "Interaction",
@@ -47,11 +52,6 @@ const skillItem = [
   {
     imgSrc: "/images/tailwindcss.svg",
     label: "TailwindCSS",
-    desc: "User Interface",
-  },
-  {
-    imgSrc: "/images/css3.svg",
-    label: "CSS",
     desc: "User Interface",
   },
   {
