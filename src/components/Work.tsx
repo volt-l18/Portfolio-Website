@@ -5,7 +5,7 @@ import ProjectCard from "./ProjectCard";
 
 const works = [
   {
-    imgSrc: "/images/project-7.png",
+    imgSrc: "/images/project-7.gif",
     title: "llm-redteam-pipeline",
     tags: ["jinja2","pandas", "litellm", "google-generativeai", "Ollama"],
     projectLink: "https://github.com/volt-l18/llm-redteam-pipeline.git",
